@@ -1,5 +1,17 @@
 # deepagents
 
+## 1.16.3
+
+### Patch Changes
+
+- [#1027](https://github.com/langchain-ai/deepagentsjs/pull/1027) [`e520516`](https://github.com/langchain-ai/deepagentsjs/commit/e520516c1ddef008b6929dc635c9459736b3dabb) Thanks [@hntrl](https://github.com/hntrl)! - fix(deepagents): clip long `grep` lines to a window around the match
+  
+  `grep` shows at most 2,000 characters of each matching line, centered on the match, so a hit on a huge single line (such as an offloaded minified JSON tool result) no longer returns the whole line.
+
+- [#950](https://github.com/langchain-ai/deepagentsjs/pull/950) [`ef35a77`](https://github.com/langchain-ai/deepagentsjs/commit/ef35a77099ec1a69b2592504c03f10a1b18e7474) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat(deepagents): read inline skill tool support from model profiles
+  
+  The skills middleware discloses a skill's tools inline for any model whose profile sets `midConversationTools`, instead of matching model names.
+
 ## 1.16.2
 
 ### Patch Changes
